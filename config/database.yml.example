@@ -17,8 +17,8 @@ development:
   encoding: unicode
   database: conteo_ciudadano_development
   pool: 5
-  username: jparbros
-  password: p0stgres
+  username:
+  password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -43,13 +43,13 @@ test:
   encoding: unicode
   database: conteo_ciudadano_test
   pool: 5
-  username: jparbros
-  password: p0stgres
+  username:
+  password:
 
 production:
   adapter: postgresql
   encoding: unicode
   database: conteo_ciudadano_production
   pool: 5
-  username: jparbros
-  password: p0stgres
+  username:
+  password:
