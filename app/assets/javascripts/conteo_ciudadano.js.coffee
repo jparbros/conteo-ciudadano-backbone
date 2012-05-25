@@ -3,7 +3,9 @@ window.ConteoCiudadano =
   Collections: {}
   Views: {}
   Routers: {}
-  init: -> alert 'Hello from Backbone!'
+  init: ->
+    new ConteoCiudadano.Routers.Casillas()
+    Backbone.history.start()
 
 $(document).ready ->
   ConteoCiudadano.init()

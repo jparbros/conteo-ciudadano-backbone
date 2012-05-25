@@ -1,0 +1,35 @@
+%html
+  %head
+    %title
+      Conteo Ciudadano
+    %link{href: 'http://fonts.googleapis.com/css?family=Days+One|Comfortaa', rel: 'stylesheet', type: 'text/css'}
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+  %body
+    .container-fluid
+      = yield
+
+    .navbar.navbar-fixed-bottom
+      .navbar-inner
+        .container
+          %ul#main-nav.nav
+            %li
+              %a{href: '#', 'data-link-type' => 'porque'}
+                &iquest;Por Que?
+            %li
+              %a{href: '#', 'data-link-type' => 'como'}
+                &iquest;C&oacute;mo funcionara?
+            %li
+              %a{href: '#', 'data-link-type' => 'participa'}
+                &iquest;Quieres participar?
+            %li
+              %a{href: '#', 'data-link-type' => 'engano'}
+                &iquest;C&oacute;mo se que no es un enga&ntilde;o?
+
+          %ul.nav.pull-right
+            %li
+              %span
+                Desarrollado por:
+            %li
+              %a{href: 'http://www.parbros.net', target: '_blank'}
+                ParBros
